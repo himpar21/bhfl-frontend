@@ -17,7 +17,7 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://backendd-6qbv.onrender.com', JSON.parse(input));
+            const response = await axios.post('https://backendd-6qbv.onrender.com/bfhl', JSON.parse(input));
             setResponseData(response.data);
         } catch (error) {
             console.error('Error:', error);
